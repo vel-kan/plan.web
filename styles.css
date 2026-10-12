@@ -239,6 +239,7 @@ body{
     .menu-icono {
         display: block;          
     }
+
     .menu {
         display: none;
         flex-direction: column;
@@ -247,6 +248,7 @@ body{
         gap: 0.5rem;
         text-align: center;
     }
+
     .menu-toggle:checked ~ .menu {
         display: flex;
     }
@@ -261,7 +263,7 @@ body{
     .menu a:hover {
         background-color: var(--gris-claro);
     }
-}
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -272,6 +274,26 @@ body{
 
     .beneficios {
         padding: 2rem 1rem;
+    }
+
+    .como-funciona {
+        padding: 3rem 1rem;
+    }
+
+    .subtitulo-seccion {
+        margin-bottom: 2rem;
+    }
+
+    .pasos {
+        gap: 1.5rem;
+    }
+
+    .paso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1.5rem 1rem;
     }
 }
 
@@ -300,7 +322,7 @@ body{
     color: #777;
     margin-bottom: 3rem;
     font-weight: 500;
-    text-aling: center;
+    text-align: center;
 }
 
 .pasos {
@@ -318,6 +340,10 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
 .paso:hover {
