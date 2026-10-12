@@ -279,12 +279,15 @@ body{
 7. SECCIÓN COMO FUNCIONA
 =======================*/
 .como-funciona {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4rem 2rem;
+    padding: 4rem 5%;
     background-color: var(--blanco);
     text-align: center;
+}
+
+.como-funciona h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--grafito);
 }
 
 .como-funciona h2 span {
@@ -292,42 +295,28 @@ body{
     font-weight: bold;
 }
 
-.como-funciona h2 {
-    margin-bottom: 2rem;
-    color: var(--grafito);
-    margin-bottom: 0.5rem;
-}
-
 .subtitulo-seccion {
-    font-size: 1.2rem;
-    color: #4e4444cf;
-    margin-bottom: 2rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 3rem;
+    font-weight: 500;
 }
 
-.subtitulo-seccion span {
-    color: var(--verde-oscuro);
-    font-weight: bold;
-}
-
-.pasos{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .paso {
     background-color: var(--gris-claro);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 20px;
-    flex: 1;
-    min-width: 250px;
+    text-align: center;
 }
 
 .paso:hover {
