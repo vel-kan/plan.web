@@ -288,6 +288,7 @@ body{
     font-size: 2.2rem;
     margin-bottom: 0.5rem;
     color: var(--grafito);
+    text-aling: center;
 }
 
 .como-funciona h2 span {
@@ -300,6 +301,7 @@ body{
     color: #777;
     margin-bottom: 3rem;
     font-weight: 500;
+    text-aling: center;
 }
 
 .pasos {
