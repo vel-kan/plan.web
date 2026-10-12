@@ -285,10 +285,13 @@ body{
 }
 
 .como-funciona h2 {
+    display: block;
+    width: 100%;
     font-size: 2.2rem;
-    margin-bottom: 0.75rem;
+    margin: 0 auto 0.75rem;
     color: var(--grafito);
     letter-spacing: -0.02em;
+    text-align: center;
 }
 
 .como-funciona h2 span {
