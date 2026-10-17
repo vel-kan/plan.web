@@ -11,6 +11,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -141,6 +145,9 @@ body{
 
 .btn-primario,
 .btn-secundario {
+    display: inline-block;   
+    text-decoration: none;     
+    text-align: center;    
     padding: 1rem 2rem;
     border-radius: 10px;
     border: none;
