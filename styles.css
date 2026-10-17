@@ -154,6 +154,7 @@ body{
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
+    font-family: inherit;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -531,13 +532,13 @@ body{
     font-size: 1rem;
 }
 
-/*====================
-10. SECCIÓN B2B
-====================*/
+/*======================
+SECCIÓN RESTAURANTES B2B
+=======================*/
 .restaurantes {
     padding: 5rem 5%;
-    background-color: var(--gris-claro);
-    color: var(--grafito);
+    background-color: var(--grafito); /* Fondo oscuro */
+    color: var(--blanco);
     text-align: center;
 }
 
@@ -547,7 +548,8 @@ body{
 }
 
 .restaurantes .subtitulo-seccion {
-    color: var(--gris-claro);
+    color: rgba(255,255,255,0.85); /* Texto claro */
+    margin-bottom: 1rem;
 }
 
 .restaurantes p {
@@ -555,6 +557,7 @@ body{
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    color: #ddd;
 }
 
 /*======================
@@ -706,6 +709,200 @@ PÁGINA LEGAL (Aviso y Términos)
     .tabla-legal tbody td {
         padding: 0.6rem;
     }
+}
+
+/*======================
+SECCIÓN LISTA DE ESPERA
+=======================*/
+.lista-espera {
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, var(--verde) 0%, var(--verde-oscuro) 100%);
+    color: var(--blanco);
+    text-align: center;
+}
+
+.lista-espera h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--blanco);
+}
+
+.subtitulo-espera {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.formulario {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: var(--blanco);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--grafito);
+    font-size: 0.95rem;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select {
+    width: 100%;
+    padding: 0.9rem 1.2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--grafito);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--blanco);
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: none;
+    border-color: var(--verde);
+    box-shadow: 0 0 0 4px rgba(0, 204, 102, 0.15);
+}
+
+/* Checkbox */
+.campo.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.campo.checkbox input {
+    margin-top: 0.3rem;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--verde);
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.campo.checkbox label {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.campo.checkbox a {
+    color: var(--verde-oscuro);
+    text-decoration: underline;
+}
+
+.formulario .btn-primario {
+    width: 100%;
+    padding: 1.1rem;
+    font-size: 1.05rem;
+    border-radius: 10px;
+}
+
+/*======================
+SECCIÓN FAQ
+=======================*/
+.faq {
+    padding: 5rem 5%;
+    background-color: var(--blanco);
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--grafito);
+}
+
+.faq .subtitulo-seccion {
+    margin-bottom: 3rem;
+}
+
+.faq-lista {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background-color: var(--gris-claro);
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-left: 4px solid var(--verde);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item[open] {
+    border-left-color: var(--naranja);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item summary {
+    padding: 1.2rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--grafito);
+    cursor: pointer;
+    list-style: none; /* Quita la flecha por defecto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+/* Quita el triángulo en navegadores WebKit */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Flecha personalizada */
+.faq-item summary::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--verde-oscuro);
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+    color: var(--naranja);
+    transform: rotate(180deg);
+}
+
+.faq-item summary:hover {
+    color: var(--verde-oscuro);
+}
+
+.faq-item p {
+    padding: 0 1.5rem 1.5rem;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 1rem;
 }
 
 /*======================
